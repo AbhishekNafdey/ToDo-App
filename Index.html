@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ToDo App</title>
+    <link  type="text/css" rel="stylesheet" href="styles/styles.css" />
+    <script type="text/javascript"  src="scripts/ToDoUtil.js" ></script>
+    <script type="text/javascript"  src="scripts/ToDoView.js" ></script>
+    <script type="text/javascript"  src="scripts/ToDoModel.js" ></script>
+    <script type="text/javascript"  src="scripts/ToDoController.js" ></script>
+    <script type="text/javascript"  src="scripts/ToDoApp.js" ></script>
+</head>
+<body class="todo">
+<div class="page">
+    <header>
+        <div>
+            <div><span id="displaylistname"></span></div>
+        </div>
+        <div class="button-wraper">
+            <div><button id="sortButton" value="sort" type="button">Rearrange</button></div>
+            <div><input type="text" value="" id="addtolist" class="addtolist"></div>
+            <div>
+                <button id="addButton" type="button" value="button">Add</button>
+                <button id="viewdone" type="button" value="button">View Done</button>
+            </div>
+        </div>
+
+    </header>
+    <div id="wrapper"><ul id="todolist"></ul></div>
+</div>
+<div id="userform" class="user-form">
+    <span>First time User</span>
+    <input type="text" name="username" class="username" id="username" value="Abhishek" />
+    <input type="text" name="listname" class="listname" id="listname" value="My List" />
+    <button type="button" value="ok" class="saveandclose" id="saveandclose">Ok</button>
+</div>
+<input type="hidden" id="" class="done" >
+
+
+
+</body>
+</html>

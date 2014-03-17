@@ -1,0 +1,69 @@
+.todo .page {
+    margin: 0 auto;
+    border: 1px solid silver;
+    width: 500px;
+    height: 500px;
+    background-color: #CFECEC;
+}
+.todo .page > header {
+    text-align: center;
+    border-bottom: 1px solid rgba(14, 14, 14, 0.34);
+    height: 60px;
+}
+.todo .page > header > div{
+    width: 99%;
+}
+.button-wraper > div {
+    display: inline-block;
+    width: 30%;
+}
+.todo .page #wrapper {
+    height: 440px;
+    width: 100%;
+}
+.todo .page #todolist{
+    margin: 2px;
+    padding: 2px;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #CFECEC;
+
+}
+.todo .page #todolist  li{
+   list-style-type: none;
+    width: 98%;
+    height: 25px;
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid black;
+}
+.todo .page #todolist  li.incomplete{
+    background-color: #F9966B;
+}
+.todo .page #todolist  li.completed{
+    background-color: #8BB381;
+}
+
+.todo .page #todolist  li span{
+  float: left;
+    text-overflow: ellipsis;
+}
+.todo .page #todolist  li button{
+    float: right;
+}
+.todo .page #todolist  li button.moveup, .todo .page #todolist  li button.movedown{
+    display: none;
+}
+.todo .user-form {
+    height: 80px;
+    width: 150px;
+    border: 1px solid black;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    padding: 10px;
+    background-color: gray;
+}
